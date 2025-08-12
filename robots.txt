@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://claudio-duarte.github.io/sitemap.xml
+
+# Disallow crawling of assets that don't need indexing
+Disallow: /assets/*.js
+Disallow: /assets/*.css
+Allow: /assets/*.png
+Allow: /assets/*.jpg
+Allow: /assets/*.jpeg
+Allow: /assets/*.gif
+Allow: /assets/*.svg
+
