@@ -283,4 +283,290 @@
           <p class="mt-2 max-w-3xl text-sm leading-relaxed text-mist">
             Modelo simples e transparente: <strong class="text-fog">taxa de instalação</strong> (projeto e setup profissional dos equipamentos) + <strong class="text-fog">mensalidade com SLA</strong> — tempo de resposta garantido por contrato, monitoramento contínuo e suporte prioritário. Você sabe exatamente o que está pagando e o que recebe em troca.
           </p>
-          <a href="https://wa.me/5561990440854?text=Ol%C3%A1%20Cl%C3%A1udio%2C%20gostaria%20de%20solicitar%20uma%20an%C3%A1lise%20de%20conectividade%20e%20internet%20redundante%20para%20minha%20pousada%20na%20Chapa
+          <a href="https://wa.me/5561990440854?text=Ol%C3%A1%20Cl%C3%A1udio%2C%20gostaria%20de%20solicitar%20uma%20an%C3%A1lise%20de%20conectividade%20e%20internet%20redundante%20para%20minha%20pousada%20na%20Chapada."
+             class="mt-4 inline-block rounded-lg bg-cerrado px-6 py-3 font-mono font-700 text-ink transition hover:brightness-110"
+             target="_blank" rel="noopener">
+            Pedir análise de conectividade →
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== TERMINAL INTERATIVO ===================== -->
+    <section id="terminal" class="border-t border-line bg-panel/40 scroll-mt-16">
+      <div class="mx-auto max-w-4xl px-4 py-16 md:py-24">
+        <p class="font-mono text-sm text-mist">## bônus para os curiosos</p>
+        <h2 class="mt-2 font-mono text-2xl font-800 md:text-3xl">Converse com o terminal</h2>
+        <p class="mt-3 text-mist">Digite um comando ou clique em um atalho. É assim que eu passo o dia. 😄</p>
+
+        <div class="mt-8 overflow-hidden rounded-xl border border-line bg-[#070d18] shadow-2xl">
+          <!-- Barra da janela -->
+          <div class="flex items-center gap-2 border-b border-line bg-panel px-4 py-2.5">
+            <span class="h-3 w-3 rounded-full bg-red-500/80" aria-hidden="true"></span>
+            <span class="h-3 w-3 rounded-full bg-yellow-500/80" aria-hidden="true"></span>
+            <span class="h-3 w-3 rounded-full bg-green-500/80" aria-hidden="true"></span>
+            <span class="ml-3 font-mono text-xs text-mist">claudio@dudevops: ~</span>
+          </div>
+
+          <!-- Saída do terminal -->
+          <div id="term-output" class="h-72 overflow-y-auto p-4 font-mono text-sm leading-relaxed" aria-live="polite"></div>
+
+          <!-- Linha de entrada -->
+          <form id="term-form" class="flex items-center gap-2 border-t border-line px-4 py-3">
+            <label for="term-input" class="shrink-0 font-mono text-sm text-cerrado">claudio@dudevops:~$</label>
+            <input id="term-input" type="text" autocomplete="off" spellcheck="false"
+                   class="w-full bg-transparent font-mono text-sm text-fog placeholder-mist/50 focus:outline-none"
+                   placeholder="digite 'ajuda' e pressione Enter" />
+          </form>
+
+          <!-- Atalhos -->
+          <div class="flex flex-wrap gap-2 border-t border-line bg-panel px-4 py-3">
+            <button data-cmd="ajuda"   class="term-shortcut rounded border border-line px-3 py-1 font-mono text-xs text-mist hover:border-fog hover:text-fog">ajuda</button>
+            <button data-cmd="devops"  class="term-shortcut rounded border border-line px-3 py-1 font-mono text-xs text-cloud hover:border-cloud">devops</button>
+            <button data-cmd="chapada" class="term-shortcut rounded border border-line px-3 py-1 font-mono text-xs text-cerrado hover:border-cerrado">chapada</button>
+            <button data-cmd="contato" class="term-shortcut rounded border border-line px-3 py-1 font-mono text-xs text-mist hover:border-fog hover:text-fog">contato</button>
+            <button data-cmd="limpar"  class="term-shortcut rounded border border-line px-3 py-1 font-mono text-xs text-mist hover:border-fog hover:text-fog">limpar</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CONTATO ===================== -->
+    <section id="contato" class="border-t border-line scroll-mt-16">
+      <div class="mx-auto max-w-6xl px-4 py-16 md:py-24">
+        <p class="font-mono text-sm text-mist">## vamos conversar</p>
+        <h2 class="mt-2 font-mono text-2xl font-800 md:text-4xl">Contato</h2>
+
+        <div class="mt-10 grid gap-10 md:grid-cols-2">
+          <!-- Formulário -->
+          <form id="contact-form" class="space-y-4" aria-label="Formulário de contato">
+            <div>
+              <label for="cf-nome" class="mb-1 block text-sm text-mist">Nome</label>
+              <input id="cf-nome" name="nome" type="text" required
+                     class="w-full rounded-lg border border-line bg-panel px-4 py-3 text-fog placeholder-mist/50 focus:border-cloud focus:outline-none"
+                     placeholder="Seu nome" />
+            </div>
+            <div>
+              <label for="cf-tipo" class="mb-1 block text-sm text-mist">Assunto</label>
+              <select id="cf-tipo" name="tipo"
+                      class="w-full rounded-lg border border-line bg-panel px-4 py-3 text-fog focus:border-cloud focus:outline-none">
+                <option value="Consultoria DevSecOps / Cloud">Consultoria DevSecOps / Cloud</option>
+                <option value="Internet redundante na Chapada">Internet redundante na Chapada</option>
+                <option value="Outro assunto">Outro assunto</option>
+              </select>
+            </div>
+            <div>
+              <label for="cf-msg" class="mb-1 block text-sm text-mist">Mensagem</label>
+              <textarea id="cf-msg" name="mensagem" rows="4" required
+                        class="w-full rounded-lg border border-line bg-panel px-4 py-3 text-fog placeholder-mist/50 focus:border-cloud focus:outline-none"
+                        placeholder="Conte rapidamente o que você precisa"></textarea>
+            </div>
+            <button type="submit"
+                    class="w-full rounded-lg bg-fog px-6 py-3.5 font-mono font-700 text-ink transition hover:brightness-90">
+              Enviar pelo WhatsApp →
+            </button>
+            <p class="text-xs text-mist">Ao enviar, o WhatsApp abre com sua mensagem pronta — sem cadastro, sem espera.</p>
+          </form>
+
+          <!-- Canais diretos -->
+          <div class="space-y-4">
+            <a href="https://wa.me/5561990440854?text=Ol%C3%A1%20Cl%C3%A1udio%2C%20gostaria%20de%20agendar%20uma%20conversa%20sobre%20consultoria%20DevSecOps%20para%20nossa%20empresa."
+               target="_blank" rel="noopener"
+               class="block rounded-xl border border-cloud/40 bg-panel/60 p-5 transition hover:border-cloud">
+              <p class="font-mono text-sm font-700 text-cloud">WhatsApp — Empresas</p>
+              <p class="mt-1 text-sm text-mist">"Olá Cláudio, gostaria de agendar uma conversa sobre consultoria DevSecOps para nossa empresa."</p>
+            </a>
+            <a href="https://wa.me/5561990440854?text=Ol%C3%A1%20Cl%C3%A1udio%2C%20gostaria%20de%20solicitar%20uma%20an%C3%A1lise%20de%20conectividade%20e%20internet%20redundante%20para%20minha%20pousada%20na%20Chapada."
+               target="_blank" rel="noopener"
+               class="block rounded-xl border border-cerrado/40 bg-panel/60 p-5 transition hover:border-cerrado">
+              <p class="font-mono text-sm font-700 text-cerrado">WhatsApp — Pousadas e Comércios</p>
+              <p class="mt-1 text-sm text-mist">"Olá Cláudio, gostaria de solicitar uma análise de conectividade e internet redundante para minha pousada na Chapada."</p>
+            </a>
+
+            <div class="rounded-xl border border-line bg-panel/60 p-5">
+              <dl class="space-y-2 text-sm">
+                <div class="flex gap-2">
+                  <dt class="font-mono text-mist">tel:</dt>
+                  <dd><a href="tel:+5561990440854" class="text-fog hover:text-cloud">+55 (61) 99044-0854</a></dd>
+                </div>
+                <div class="flex gap-2">
+                  <dt class="font-mono text-mist">mail:</dt>
+                  <dd><a href="mailto:duarte.unix@gmail.com" class="text-fog hover:text-cloud">duarte.unix@gmail.com</a></dd>
+                </div>
+                <div class="flex gap-2">
+                  <dt class="font-mono text-mist">loc:</dt>
+                  <dd class="text-fog">Chapada dos Veadeiros / Brasília – DF, Brasil</dd>
+                </div>
+                <div class="flex gap-2">
+                  <dt class="font-mono text-mist">in:</dt>
+                  <dd><a href="https://linkedin.com/in/cfduarte" target="_blank" rel="noopener" class="text-fog hover:text-cloud">linkedin.com/in/cfduarte</a></dd>
+                </div>
+              </dl>
+              <button id="vcard-btn" type="button"
+                      class="mt-4 w-full rounded-lg border border-line px-4 py-3 font-mono text-sm font-700 text-fog transition hover:border-fog">
+                ⬇ Baixar cartão de contato (vCard)
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="border-t border-line bg-panel/40">
+    <div class="mx-auto flex max-w-6xl flex-col items-center justify-between gap-3 px-4 py-8 text-sm text-mist md:flex-row">
+      <p class="font-mono"><span class="text-cloud">du</span>devops<span class="text-cerrado">:~$</span> © <span id="year">2026</span> Cláudio Duarte</p>
+      <p>DevSecOps · Cloud · Internet redundante na Chapada dos Veadeiros</p>
+    </div>
+  </footer>
+
+  <!-- ===================== VANILLA JS ===================== -->
+  <script>
+    "use strict";
+
+    /* ---------- Ano do rodapé ---------- */
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    /* ---------- Terminal interativo ---------- */
+    (function () {
+      const output = document.getElementById("term-output");
+      const form = document.getElementById("term-form");
+      const input = document.getElementById("term-input");
+
+      const COLORS = { cloud: "#38bdf8", cerrado: "#4ade80", mist: "#94a3b8", fog: "#e2e8f0", warn: "#fbbf24" };
+
+      const RESPONSES = {
+        ajuda: [
+          ["fog",     "Comandos disponíveis:"],
+          ["cloud",   "  devops   → serviços de DevSecOps & Cloud (remoto/nacional)"],
+          ["cerrado", "  chapada  → internet redundante na Chapada dos Veadeiros"],
+          ["fog",     "  contato  → canais de contato direto"],
+          ["mist",    "  limpar   → limpa a tela do terminal"],
+        ],
+        devops: [
+          ["cloud", "== DevSecOps & Cloud Corporativo =="],
+          ["fog",   "• CI/CD seguro: GitHub Actions, GitLab CI, Jenkins, ArgoCD"],
+          ["fog",   "• Kubernetes em produção: EKS, GKE, AKS + Helm + GitOps"],
+          ["fog",   "• IaC: Terraform, Ansible, CloudFormation"],
+          ["fog",   "• Segurança: SonarQube, SAST/DAST, WAF, IAM, Vault, pentest"],
+          ["fog",   "• FinOps: redução real de custos em AWS, Azure e GCP"],
+          ["mist",  "Experiência: Claro Brasil, Caixa Econômica Federal, Banco do Brasil."],
+          ["cloud", "→ Digite 'contato' para agendar uma conversa."],
+        ],
+        chapada: [
+          ["cerrado", "== Internet que Não Cai — Chapada dos Veadeiros =="],
+          ["fog",     "• Multi-WAN: Fibra + Starlink + 4G com failover em segundos (pfSense)"],
+          ["fog",     "• Wi-Fi profissional UniFi/Omada com mesh para chalés"],
+          ["fog",     "• Backup automatizado: NAS local + nuvem criptografada"],
+          ["fog",     "• Gestão remota segura via WireGuard, com SLA em contrato"],
+          ["mist",    "Atendimento: Alto Paraíso, Vila de São Jorge e arredores."],
+          ["cerrado", "→ Digite 'contato' para pedir uma análise de conectividade."],
+        ],
+        contato: [
+          ["fog",  "WhatsApp : +55 (61) 99044-0854"],
+          ["fog",  "E-mail   : duarte.unix@gmail.com"],
+          ["fog",  "LinkedIn : linkedin.com/in/cfduarte"],
+          ["mist", "Ou role até a seção Contato e use os botões prontos. ;)"],
+        ],
+      };
+
+      function line(text, color) {
+        const p = document.createElement("p");
+        p.textContent = text;
+        p.style.color = COLORS[color] || COLORS.fog;
+        p.style.whiteSpace = "pre-wrap";
+        output.appendChild(p);
+      }
+
+      function echoCommand(cmd) {
+        const p = document.createElement("p");
+        const prompt = document.createElement("span");
+        prompt.textContent = "claudio@dudevops:~$ ";
+        prompt.style.color = COLORS.cerrado;
+        const c = document.createElement("span");
+        c.textContent = cmd;
+        c.style.color = COLORS.fog;
+        p.appendChild(prompt); p.appendChild(c);
+        output.appendChild(p);
+      }
+
+      function run(raw) {
+        const cmd = raw.trim().toLowerCase();
+        if (!cmd) return;
+        echoCommand(cmd);
+
+        if (cmd === "limpar" || cmd === "clear") {
+          output.innerHTML = "";
+        } else if (RESPONSES[cmd]) {
+          RESPONSES[cmd].forEach(([color, text]) => line(text, color));
+        } else {
+          line("bash: " + cmd + ": comando não encontrado", "warn");
+          line("Digite 'ajuda' para ver os comandos disponíveis.", "mist");
+        }
+        line("", "fog");
+        output.scrollTop = output.scrollHeight;
+      }
+
+      // Boas-vindas
+      [
+        ["mist",    "Última conexão: Chapada dos Veadeiros, GO — uplink estável ✔"],
+        ["fog",     "Bem-vindo(a) ao terminal DuDevOps."],
+        ["cerrado", "Digite 'ajuda' para começar."],
+        ["fog",     ""],
+      ].forEach(([c, t]) => line(t, c));
+
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+        run(input.value);
+        input.value = "";
+        input.focus();
+      });
+
+      document.querySelectorAll(".term-shortcut").forEach(function (btn) {
+        btn.addEventListener("click", function () {
+          run(btn.dataset.cmd);
+          input.focus();
+        });
+      });
+    })();
+
+    /* ---------- Formulário → WhatsApp ---------- */
+    document.getElementById("contact-form").addEventListener("submit", function (e) {
+      e.preventDefault();
+      const nome = document.getElementById("cf-nome").value.trim();
+      const tipo = document.getElementById("cf-tipo").value;
+      const msg  = document.getElementById("cf-msg").value.trim();
+      const texto = "Olá Cláudio! Meu nome é " + nome + ". Assunto: " + tipo + ". " + msg;
+      window.open("https://wa.me/5561990440854?text=" + encodeURIComponent(texto), "_blank", "noopener");
+    });
+
+    /* ---------- Download do vCard ---------- */
+    document.getElementById("vcard-btn").addEventListener("click", function () {
+      const vcard = [
+        "BEGIN:VCARD",
+        "VERSION:3.0",
+        "N:Duarte;Cláudio;;;",
+        "FN:Cláudio Duarte",
+        "ORG:DuDevOps",
+        "TITLE:Consultor DevSecOps & Infraestrutura",
+        "TEL;TYPE=CELL:+5561990440854",
+        "EMAIL:duarte.unix@gmail.com",
+        "URL:https://dudevops.com.br",
+        "ADR;TYPE=WORK:;;Chapada dos Veadeiros / Brasília;DF;;;Brasil",
+        "NOTE:Consultoria DevSecOps e Cloud (AWS/Azure/GCP) + Internet redundante na Chapada dos Veadeiros",
+        "END:VCARD",
+      ].join("\r\n");
+      const blob = new Blob([vcard], { type: "text/vcard;charset=utf-8" });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = "claudio-duarte-dudevops.vcf";
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+    });
+  </script>
+</body>
+</html>
