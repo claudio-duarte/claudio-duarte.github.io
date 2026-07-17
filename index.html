@@ -1,129 +1,286 @@
 <!doctype html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
-    <!-- SEO Meta Tags -->
-    <title>DuDevOps - Soluções DevSecOps Profissionais | Automação CI/CD e Cloud Computing</title>
-    <meta name="description" content="Especialistas em DevSecOps com 6+ anos de experiência. Oferecemos automação CI/CD, infraestrutura como código, containerização Docker/Kubernetes, monitoramento e segurança integrada. Transforme sua infraestrutura com AWS, Azure e GCP." />
-    <meta name="keywords" content="DevOps, DevSecOps, CI/CD, automação, Docker, Kubernetes, AWS, Azure, GCP, Terraform, Ansible, cloud computing, infraestrutura como código, monitoramento, segurança, Cláudio Duarte" />
-    <meta name="author" content="Cláudio Francisco Duarte" />
-    <meta name="robots" content="index, follow" />
-    <link rel="canonical" href="https://claudio-duarte.github.io/" />
-    
-    <!-- Open Graph Meta Tags -->
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="DuDevOps - Soluções DevSecOps Profissionais" />
-    <meta property="og:description" content="Especialistas em DevSecOps com 6+ anos de experiência. Oferecemos automação CI/CD, infraestrutura como código, containerização e cloud computing." />
-    <meta property="og:url" content="https://claudio-duarte.github.io/" />
-    <meta property="og:site_name" content="DuDevOps" />
-    <meta property="og:image" content="https://claudio-duarte.github.io/assets/hero-devops-eRd5CotN.jpg" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
-    <meta property="og:locale" content="pt_BR" />
-    
-    <!-- Twitter Card Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="DuDevOps - Soluções DevSecOps Profissionais" />
-    <meta name="twitter:description" content="Especialistas em DevSecOps com 6+ anos de experiência. Oferecemos automação CI/CD, infraestrutura como código, containerização e cloud computing." />
-    <meta name="twitter:image" content="https://claudio-duarte.github.io/assets/hero-devops-eRd5CotN.jpg" />
-    
-    <!-- Additional SEO Tags -->
-    <meta name="theme-color" content="#3b82f6" />
-    <meta name="msapplication-TileColor" content="#3b82f6" />
-    
-    <!-- Structured Data (JSON-LD) -->
-    <script type="application/ld+json">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO Meta Tags -->
+  <title>DuDevOps — Consultoria DevSecOps &amp; Internet Redundante na Chapada dos Veadeiros | Cláudio Duarte</title>
+  <meta name="description" content="Consultoria DevSecOps e Cloud (AWS, Azure, GCP) para empresas em todo o Brasil e internet redundante sem quedas (Multi-WAN, Starlink, pfSense) para pousadas e comércios na Chapada dos Veadeiros. Automação CI/CD, Kubernetes, FinOps e Wi-Fi profissional." />
+  <meta name="keywords" content="DevOps, DevSecOps, CI/CD, automação, Docker, Kubernetes, AWS, Azure, GCP, Terraform, Ansible, cloud computing, infraestrutura como código, monitoramento, segurança, internet redundante, Starlink, pfSense, Multi-WAN, failover, Wi-Fi profissional, Chapada dos Veadeiros, Alto Paraíso de Goiás, Vila de São Jorge, pousadas, Cláudio Duarte" />
+  <meta name="author" content="Cláudio Francisco Duarte" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://dudevops.com.br/" />
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="DuDevOps — Consultoria DevSecOps &amp; Internet Redundante na Chapada dos Veadeiros" />
+  <meta property="og:description" content="Infraestrutura de nuvem resiliente para empresas de tecnologia e internet ininterrupta com failover inteligente para pousadas de alto padrão." />
+  <meta property="og:url" content="https://dudevops.com.br/" />
+  <meta property="og:site_name" content="DuDevOps" />
+  <meta property="og:image" content="https://dudevops.com.br/assets/hero-devops-eRd5CotN.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:locale" content="pt_BR" />
+
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="DuDevOps — Consultoria DevSecOps &amp; Internet Redundante na Chapada" />
+  <meta name="twitter:description" content="Automação CI/CD segura, Kubernetes e FinOps para empresas. Internet sem quedas com failover inteligente para pousadas da Chapada dos Veadeiros." />
+  <meta name="twitter:image" content="https://dudevops.com.br/assets/hero-devops-eRd5CotN.jpg" />
+
+  <!-- Additional SEO Tags -->
+  <meta name="theme-color" content="#0b1220" />
+  <meta name="msapplication-TileColor" content="#0b1220" />
+  <meta name="geo.region" content="BR-GO" />
+  <meta name="geo.placename" content="Alto Paraíso de Goiás, Chapada dos Veadeiros" />
+
+  <!-- Structured Data (JSON-LD) — marcação híbrida: ProfessionalService + LocalBusiness -->
+  <script type="application/ld+json">
+  [
     {
       "@context": "https://schema.org",
-      "@type": "Organization",
+      "@type": "ProfessionalService",
+      "@id": "https://dudevops.com.br/#devsecops",
       "name": "DuDevOps Tecnologia e Serviços",
-      "url": "https://claudio-duarte.github.io/",
-      "logo": "https://claudio-duarte.github.io/favicon.ico",
-      "description": "Especialistas em DevSecOps com 6+ anos de experiência oferecendo soluções completas em automação, segurança e cloud computing.",
+      "alternateName": "DuDevOps",
+      "url": "https://dudevops.com.br/",
+      "logo": "https://dudevops.com.br/favicon.ico",
+      "image": "https://dudevops.com.br/assets/hero-devops-eRd5CotN.jpg",
+      "description": "Consultoria DevSecOps e Cloud Computing (AWS, Azure e GCP) com atendimento remoto em todo o Brasil: automação de esteiras CI/CD seguras, Kubernetes, infraestrutura como código, FinOps e auditoria preventiva de código.",
       "founder": {
         "@type": "Person",
         "name": "Cláudio Francisco Duarte",
         "jobTitle": "DevOps/DevSecOps Sênior",
         "url": "https://linkedin.com/in/cfduarte"
       },
+      "telephone": "+55 61 99044-0854",
+      "email": "duarte.unix@gmail.com",
       "contactPoint": {
         "@type": "ContactPoint",
-        "telephone": "+55 62 99878-6849",
+        "telephone": "+55 61 99044-0854",
+        "email": "duarte.unix@gmail.com",
         "contactType": "customer service",
         "availableLanguage": "Portuguese"
       },
-      "sameAs": [
-        "https://linkedin.com/in/cfduarte"
-      ],
-      "serviceArea": {
-        "@type": "Country",
-        "name": "Brasil"
-      },
+      "sameAs": ["https://linkedin.com/in/cfduarte"],
+      "areaServed": { "@type": "Country", "name": "Brasil" },
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
-        "name": "Serviços DevSecOps",
+        "name": "Serviços DevSecOps e Cloud",
         "itemListElement": [
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Automação CI/CD",
-              "description": "Pipelines automatizados com Azure DevOps, GitHub Actions e AWS CodePipeline"
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Infraestrutura como Código",
-              "description": "Terraform, Ansible, Helm e Flux para ambientes multi-cloud"
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Containerização",
-              "description": "Docker e Kubernetes com administração de clusters Rancher"
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Monitoramento",
-              "description": "Grafana, Prometheus, CloudWatch e Azure Monitor"
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Segurança DevSecOps",
-              "description": "SAST/DAST, IAM, WAF e mitigação preventiva de vulnerabilidades"
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Cloud Computing",
-              "description": "Migração para nuvem, otimização de custos e arquitetura multi-cloud"
-            }
-          }
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Automação CI/CD Segura", "description": "Pipelines automatizados com GitHub Actions, GitLab CI, Jenkins, ArgoCD, Azure DevOps e AWS CodePipeline" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Infraestrutura como Código", "description": "Terraform, Ansible, Helm, CloudFormation e Flux para ambientes multi-cloud" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Orquestração de Microsserviços", "description": "Kubernetes gerenciado em EKS, GKE e AKS, com Helm, GitOps e observabilidade" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "FinOps e Otimização de Custos", "description": "Análise de faturamento em nuvem e redução de custos em AWS, Azure e GCP" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Segurança DevSecOps", "description": "SAST/DAST, SonarQube, IAM, WAF, pentest e mitigação preventiva de vulnerabilidades" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Monitoramento e Observabilidade", "description": "Grafana, Prometheus, Zabbix, CloudWatch, Azure Monitor e ELK Stack" } }
+        ]
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "@id": "https://dudevops.com.br/#chapada",
+      "name": "DuDevOps — Internet Redundante e Infraestrutura de TI na Chapada dos Veadeiros",
+      "url": "https://dudevops.com.br/#chapada",
+      "image": "https://dudevops.com.br/assets/cloud-infrastructure-DyWvRIaf.png",
+      "description": "Internet sem quedas para pousadas, hotéis e comércios da Chapada dos Veadeiros: link redundante Multi-WAN (Fibra + Starlink + 4G) com failover automático, Wi-Fi profissional de longo alcance, backup automatizado e gestão remota com SLA.",
+      "telephone": "+55 61 99044-0854",
+      "email": "duarte.unix@gmail.com",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Alto Paraíso de Goiás",
+        "addressRegion": "GO",
+        "addressCountry": "BR"
+      },
+      "areaServed": [
+        { "@type": "Place", "name": "Alto Paraíso de Goiás" },
+        { "@type": "Place", "name": "Vila de São Jorge" },
+        { "@type": "Place", "name": "Chapada dos Veadeiros" },
+        { "@type": "Place", "name": "Cavalcante" },
+        { "@type": "Place", "name": "Brasília - DF" }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Serviços de Infraestrutura Local",
+        "itemListElement": [
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Link Redundante Inteligente (Multi-WAN)", "description": "pfSense/OPNsense unificando Fibra Local + Starlink + 4G com failover automático em segundos e QoS para reservas e pagamentos" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Wi-Fi Profissional de Longo Alcance", "description": "Projetos UniFi/Omada com redes isoladas, cobertura mesh externa para chalés e portal de login personalizado" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Cofre de Dados (Backup Automatizado)", "description": "Backup redundante em NAS local e criptografado na nuvem (Backblaze B2/Wasabi via restic/Borg)" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Gestão Remota e Monitoramento (WireGuard)", "description": "Resolução proativa de incidentes e suporte remoto seguro com SLA em contrato" } }
         ]
       }
     }
-    </script>
-    
-    <script type="module" crossorigin src="/assets/index-BcklfEOa.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-vmNVaW3O.css">
-  </head>
-  <body>
-    <div id="root"></div>
-  </body>
-</html>
+  ]
+  </script>
 
+  <!-- Fontes: JetBrains Mono (display/terminal) + Inter (corpo) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS v4 — Play CDN (build para navegador) -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <style type="text/tailwindcss">
+    @theme {
+      --font-mono: "JetBrains Mono", ui-monospace, monospace;
+      --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+      --color-ink: #0b1220;        /* fundo base */
+      --color-panel: #111a2c;      /* superfícies */
+      --color-line: #1e2a44;       /* bordas */
+      --color-cloud: #38bdf8;      /* trilha corporativa (céu/nuvem) */
+      --color-cerrado: #4ade80;    /* trilha Chapada (verde de console + cerrado) */
+      --color-fog: #e2e8f0;        /* texto principal */
+      --color-mist: #94a3b8;       /* texto secundário */
+    }
+    html { scroll-behavior: smooth; }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { animation: none !important; transition: none !important; }
+    }
+    .prompt-caret::after {
+      content: "▋";
+      animation: blink 1.1s steps(1) infinite;
+      color: var(--color-cerrado);
+    }
+    @keyframes blink { 50% { opacity: 0; } }
+    :focus-visible { outline: 2px solid var(--color-cloud); outline-offset: 2px; }
+  </style>
+</head>
+
+<body class="bg-ink text-fog font-sans antialiased">
+
+  <!-- ===================== NAV ===================== -->
+  <header class="sticky top-0 z-50 border-b border-line bg-ink/90 backdrop-blur">
+    <nav class="mx-auto flex max-w-6xl items-center justify-between px-4 py-3" aria-label="Navegação principal">
+      <a href="#inicio" class="font-mono text-lg font-800 tracking-tight">
+        <span class="text-cloud">du</span><span class="text-fog">devops</span><span class="text-cerrado">:~$</span>
+      </a>
+      <ul class="hidden items-center gap-6 text-sm text-mist md:flex">
+        <li><a class="hover:text-cloud" href="#devsecops">DevSecOps &amp; Cloud</a></li>
+        <li><a class="hover:text-cerrado" href="#chapada">Internet na Chapada</a></li>
+        <li><a class="hover:text-fog" href="#terminal">Terminal</a></li>
+        <li><a class="rounded-md border border-line px-3 py-1.5 text-fog hover:border-cloud hover:text-cloud" href="#contato">Contato</a></li>
+      </ul>
+      <a href="#contato" class="rounded-md border border-line px-3 py-1.5 text-sm text-fog hover:border-cloud md:hidden">Contato</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ===================== HERO ===================== -->
+    <section id="inicio" class="relative overflow-hidden">
+      <img src="/assets/hero-devops-eRd5CotN.jpg" alt="" aria-hidden="true"
+           class="absolute inset-0 h-full w-full object-cover opacity-15" />
+      <div class="absolute inset-0 bg-gradient-to-b from-ink/70 via-ink/85 to-ink"></div>
+
+      <div class="relative mx-auto max-w-6xl px-4 py-20 md:py-28">
+        <p class="mb-4 font-mono text-sm text-cerrado">$ uptime --garantido</p>
+        <h1 class="max-w-4xl font-mono text-3xl font-800 leading-tight tracking-tight md:text-5xl">
+          Consultoria <span class="text-cloud">DevSecOps</span> &amp; <span class="text-cerrado">Redundância de Internet</span> na Chapada dos Veadeiros
+        </h1>
+        <p class="mt-6 max-w-3xl text-lg text-mist md:text-xl">
+          Infraestrutura de nuvem resiliente para empresas de tecnologia e sistemas de internet ininterrupta com failover inteligente para pousadas de alto padrão.
+        </p>
+        <div class="mt-10 flex flex-col gap-4 sm:flex-row">
+          <a href="#devsecops"
+             class="rounded-lg bg-cloud px-6 py-3.5 text-center font-mono font-700 text-ink transition hover:brightness-110">
+            Preciso de DevOps &amp; Nuvem
+          </a>
+          <a href="#chapada"
+             class="rounded-lg bg-cerrado px-6 py-3.5 text-center font-mono font-700 text-ink transition hover:brightness-110">
+            Internet Sem Quedas na Chapada
+          </a>
+        </div>
+        <p class="mt-8 font-mono text-xs text-mist">
+          Cláudio Duarte · 18 anos em infraestrutura · Chapada dos Veadeiros / Brasília – DF
+        </p>
+      </div>
+    </section>
+
+    <!-- ===================== TRILHA 1 — DEVSECOPS ===================== -->
+    <section id="devsecops" class="border-t border-line bg-panel/40 scroll-mt-16">
+      <div class="mx-auto max-w-6xl px-4 py-16 md:py-24">
+        <p class="font-mono text-sm text-cloud">## trilha 1 — remoto / nacional</p>
+        <h2 class="mt-2 font-mono text-2xl font-800 md:text-4xl">DevSecOps &amp; Cloud Corporativo</h2>
+        <p class="mt-4 max-w-3xl text-mist">
+          Sua esteira de entrega mais rápida, mais barata e mais segura. Experiência prática construída dentro de operações de grande escala — como a Claro Brasil e instituições financeiras públicas de primeira linha — aplicada diretamente ao seu ambiente.
+        </p>
+
+        <div class="mt-10 grid gap-6 md:grid-cols-2">
+          <article class="rounded-xl border border-line bg-ink p-6">
+            <h3 class="font-mono text-lg font-700 text-cloud">Redução de custos em nuvem (FinOps)</h3>
+            <p class="mt-2 text-sm leading-relaxed text-mist">Auditoria de faturamento AWS, Azure e GCP, dimensionamento correto de recursos e eliminação de desperdício. Sua fatura de nuvem deixa de ser uma caixa-preta.</p>
+          </article>
+          <article class="rounded-xl border border-line bg-ink p-6">
+            <h3 class="font-mono text-lg font-700 text-cloud">Esteiras CI/CD seguras</h3>
+            <p class="mt-2 text-sm leading-relaxed text-mist">Automação de build, teste e deploy com GitHub Actions, GitLab CI, Jenkins, ArgoCD e Azure DevOps — com segurança integrada desde o primeiro commit.</p>
+          </article>
+          <article class="rounded-xl border border-line bg-ink p-6">
+            <h3 class="font-mono text-lg font-700 text-cloud">Kubernetes em produção (EKS / GKE / AKS)</h3>
+            <p class="mt-2 text-sm leading-relaxed text-mist">Orquestração de microsserviços com Helm, GitOps (ArgoCD/Flux), gestão de secrets com HashiCorp Vault e armazenamento persistente. Clusters estáveis, observáveis e escaláveis.</p>
+          </article>
+          <article class="rounded-xl border border-line bg-ink p-6">
+            <h3 class="font-mono text-lg font-700 text-cloud">Segurança de APIs e auditoria de código</h3>
+            <p class="mt-2 text-sm leading-relaxed text-mist">Análise preventiva com SonarQube e ferramentas SAST/DAST, hardening de gateways (Kong), WAF, IAM e pentests internos. Vulnerabilidades encontradas antes de virarem incidentes.</p>
+          </article>
+        </div>
+
+        <div class="mt-10 flex flex-wrap items-center gap-8 rounded-xl border border-line bg-ink p-6">
+          <img src="/assets/aws-logo-CoAPoxuJ.png" alt="Amazon Web Services" class="h-10 w-auto opacity-80" loading="lazy" />
+          <img src="/assets/azure-logo-DOsrjG9D.png" alt="Microsoft Azure" class="h-10 w-auto opacity-80" loading="lazy" />
+          <img src="/assets/gcp-logo-DNrfy_ni.png" alt="Google Cloud Platform" class="h-10 w-auto opacity-80" loading="lazy" />
+          <img src="/assets/docker-logo-HgtVBGb5.png" alt="Docker" class="h-10 w-auto opacity-80" loading="lazy" />
+          <img src="/assets/kubernetes-logo-DAx2gCzt.png" alt="Kubernetes" class="h-10 w-auto opacity-80" loading="lazy" />
+        </div>
+
+        <div class="mt-8">
+          <a href="https://wa.me/5561990440854?text=Ol%C3%A1%20Cl%C3%A1udio%2C%20gostaria%20de%20agendar%20uma%20conversa%20sobre%20consultoria%20DevSecOps%20para%20nossa%20empresa."
+             class="inline-block rounded-lg bg-cloud px-6 py-3 font-mono font-700 text-ink transition hover:brightness-110"
+             target="_blank" rel="noopener">
+            Agendar conversa técnica →
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== TRILHA 2 — CHAPADA ===================== -->
+    <section id="chapada" class="border-t border-line scroll-mt-16">
+      <div class="mx-auto max-w-6xl px-4 py-16 md:py-24">
+        <p class="font-mono text-sm text-cerrado">## trilha 2 — local / chapada dos veadeiros</p>
+        <h2 class="mt-2 font-mono text-2xl font-800 md:text-4xl">Internet que Não Cai</h2>
+        <p class="mt-4 max-w-3xl text-mist">
+          Na Chapada, cada queda de sinal custa caro: <strong class="text-fog">reservas perdidas porque o site saiu do ar</strong>, maquininha de cartão offline na hora do check-out, hóspedes insatisfeitos avaliando mal a estadia. A solução não é trocar de provedor — é <strong class="text-fog">nunca depender de um só</strong>.
+        </p>
+
+        <div class="mt-10 grid gap-6 md:grid-cols-2">
+          <article class="rounded-xl border border-line bg-panel/60 p-6">
+            <p class="font-mono text-xs text-cerrado">pilar 01</p>
+            <h3 class="mt-1 font-mono text-lg font-700">Link Redundante Inteligente (Multi-WAN)</h3>
+            <p class="mt-2 text-sm leading-relaxed text-mist">Equipamento dedicado rodando <strong class="text-fog">pfSense ou OPNsense</strong> que unifica Fibra Local + Starlink + 4G. Se um link cai, a transição é automática e imperceptível — <strong class="text-fog">failover em segundos</strong> — com priorização de tráfego (QoS) para sistemas de reservas e pagamentos.</p>
+          </article>
+          <article class="rounded-xl border border-line bg-panel/60 p-6">
+            <p class="font-mono text-xs text-cerrado">pilar 02</p>
+            <h3 class="mt-1 font-mono text-lg font-700">Wi-Fi Profissional de Longo Alcance</h3>
+            <p class="mt-2 text-sm leading-relaxed text-mist">Projetos <strong class="text-fog">UniFi ou Omada</strong> com redes isoladas e seguras (Hóspedes vs. Administração vs. Câmeras), cobertura mesh externa para chalés e áreas abertas, e portal de login personalizado com a marca da sua pousada.</p>
+          </article>
+          <article class="rounded-xl border border-line bg-panel/60 p-6">
+            <p class="font-mono text-xs text-cerrado">pilar 03</p>
+            <h3 class="mt-1 font-mono text-lg font-700">Cofre de Dados (Backup Automatizado)</h3>
+            <p class="mt-2 text-sm leading-relaxed text-mist">Rotinas redundantes de backup em servidor local (NAS) e criptografado na nuvem (<strong class="text-fog">Backblaze B2/Wasabi via restic/Borg</strong>). Se um equipamento falhar, sua operação volta em horas — não em semanas.</p>
+          </article>
+          <article class="rounded-xl border border-line bg-panel/60 p-6">
+            <p class="font-mono text-xs text-cerrado">pilar 04</p>
+            <h3 class="mt-1 font-mono text-lg font-700">Gestão Remota e Monitoramento (WireGuard)</h3>
+            <p class="mt-2 text-sm leading-relaxed text-mist">Acesso remoto seguro via <strong class="text-fog">WireGuard</strong> para resolução proativa de incidentes: na maioria dos casos, o problema é resolvido antes de você perceber que ele existiu.</p>
+          </article>
+        </div>
+
+        <div class="mt-10 rounded-xl border border-cerrado/30 bg-panel/60 p-6">
+          <h3 class="font-mono text-lg font-700 text-cerrado">Como funciona a contratação</h3>
+          <p class="mt-2 max-w-3xl text-sm leading-relaxed text-mist">
+            Modelo simples e transparente: <strong class="text-fog">taxa de instalação</strong> (projeto e setup profissional dos equipamentos) + <strong class="text-fog">mensalidade com SLA</strong> — tempo de resposta garantido por contrato, monitoramento contínuo e suporte prioritário. Você sabe exatamente o que está pagando e o que recebe em troca.
+          </p>
+          <a href="https://wa.me/5561990440854?text=Ol%C3%A1%20Cl%C3%A1udio%2C%20gostaria%20de%20solicitar%20uma%20an%C3%A1lise%20de%20conectividade%20e%20internet%20redundante%20para%20minha%20pousada%20na%20Chapa
